@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compressor App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet">
+    </head>
+
+<body class="bg-zinc-800 flex items-center justify-center">
+    <div id="container" class="max-w-md p-4 bg-white rounded shadow-md bg-zinc-300 h-full">
+        <div id="controls">
+            <h1 class="text-4xl font-bold mb-4">Image Compressor</h1>
+            <label for="img" class="block mb-2 text-lg">Select an image to compress:</label>
+            <input type="file" id="img" accept="image/*" class="block w-full p-2 text-lg text-zinc-300" multiple>
+            <!-- <button class="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="compress-btn">
+                Compress Image
+            </button> -->
+        </div>
+        <div id="preview" class="mt-4 w-full flex flex-wrap p-[10px] gap-[10px] items-center justify-center">
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/browser-image-compression@2.0.1/dist/browser-image-compression.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

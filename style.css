@@ -1,0 +1,26 @@
+.full-height {
+    min-height: 100vh; 
+}
+
+.preview-image {
+    width: 30vw;
+    height: 15vw;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#preview {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 50vh; 
+}
